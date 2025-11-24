@@ -1,4 +1,3 @@
-cat > README.md << 'EOF'
 # Iris ML Inference API on Kubernetes
 
 A complete MLOps demo: FastAPI + scikit-learn model trained inside the container, served on Kubernetes.
@@ -19,7 +18,7 @@ curl http://localhost:8080
 curl -X POST http://localhost:8080/predict -H "Content-Type: application/json" -d '{"sepal_length":5.1,"sepal_width":3.5,"petal_length":1.4,"petal_width":0.2}'
 
 
-
+## Project Details
 What This Project Actually Does
 - Trains a scikit-learn Logistic Regression model on the Iris dataset
 - Serves real-time predictions via `/predict` (POST JSON)
